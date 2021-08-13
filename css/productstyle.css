@@ -1,0 +1,85 @@
+/* MOdal */
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0000008c;
+    color: white;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    z-index: 1111111111111111111;
+    transform: scale(0);
+    transition: 0.4s;
+}
+
+.modalDialogActive {
+    opacity: 1;
+}
+
+.modalDialog:target {}
+
+.modalDialog>div {
+    width: 90%;
+    margin: 44px auto;
+    padding: 10px 0px;
+    background: #ffffff;
+    text-align: center;
+    /* box-shadow: 0px 0px 15px 6px black; */
+    border-radius: 10px;
+    height: 90vh;
+    border: 7px solid #000000a6;
+}
+
+.close {
+    font-size: 24px;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    background: #e8e8e8;
+    border-radius: 50%;
+    position: fixed;
+    right: 90px;
+}
+
+.close:hover {}
+
+.modaldeatiles {
+    display: flex;
+    margin-top: 29px;
+    padding: 10px;
+    color: black;
+}
+
+.ima {
+    width: 33%;
+}
+
+.ima img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.modaldes {
+    width: 33%;
+    box-shadow: 0px 0px 4px 0px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
+.modaldes h2 {}
+
+.modaldes p {
+    padding: 10px;
+    text-align: left;
+}
+
+.modalnuration {
+    width: 33%;
+}
+
+.modalActive {
+    display: block;
+    transform: scale(1);
+}
