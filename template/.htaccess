@@ -1,3 +1,0 @@
-RewriteEngine On
-php_value session.cookie_path "/"
-php_value session.cookie_domain ".kruzgrainspulses.com"

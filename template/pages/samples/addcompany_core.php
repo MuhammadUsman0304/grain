@@ -2,7 +2,7 @@
 session_start();
 require_once("config.php");
 // User
-$userid = $_REQUEST['user'];
+$userid = $_REQUEST['user']; 
 
 
 // Collect Data

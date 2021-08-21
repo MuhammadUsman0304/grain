@@ -107,13 +107,10 @@
         <div class="col-md-8">
             <?php 
              $username = $_SESSION['username'];
-             $query = "SELECT * FROM `buyers` WHERE `surename` = ?";
-             $stmt = mysqli_prepare($con, $query) or die(mysqli_error($con));
-             if (is_object($stmt)) {
-                 $stmt->bind_param('s', $username);
-                 $stmt->execute();
-                 $result = $stmt->get_result();
-                 if ($data = $result->fetch_assoc()) {
+             $query = "SELECT * FROM `buyers` WHERE `surename` = '$username'";
+             $result = mysqli_query($con, $query) or die(mysqli_error($con));
+             if ($row = mysqli_num_rows($result)>0) {
+                 while ($data = mysqli_fetch_assoc($result)) {
             ?>
                <div class="card shadow p-3 mb-5 rounded">
                 <div class="card-header bg-dark text-white">
@@ -144,9 +141,6 @@
             </div>
             <?php 
                  }
-                 $stmt->free_result();
-                 $stmt->close();
-                 $con->close();
              }
             ?>
             

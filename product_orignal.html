@@ -16,11 +16,20 @@
 <body>
     <!-- ================= Navbar ================= -->
     <section id="navbar">
+        <!-- Headline -->
         <div class="headline">
             <div class="brandname">
-
+              <div class="login">
+                <?php if (isset($_SESSION['username'])) {
+                    echo '<h3><a href="user-dash/dashboard.php"><i class="fa fa-home"></i> Dashboard</a></h3>';
+                }else{
+                    echo '<h3><a href="register.php"><i class="fa fa-user-plus"></i> Register</a> |
+                   <a href="login.php"><i class="fa fa-sign-in"></i> Login</a></h3>';
+                } ?>
+                  
+              </div>
             </div>
-
+             
             <div class="middle">
                 <h1>KRUZ GRAINS & PULSES</h1>
             </div>
@@ -35,7 +44,7 @@
             <p class="pright">By farmers who care</p>
         </div>
         <nav class="nav">
-            <div class="hamburger" style="top:60%;">
+            <div class="hamburger" style="top:50%;">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>

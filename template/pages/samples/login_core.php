@@ -3,8 +3,8 @@
 require_once('config.php');
 
 $email = $_REQUEST['email'];
-$pass = $_REQUEST['pass'];
-// $pass = md5(sha1($_REQUEST['pass']));
+//$pass = $_REQUEST['pass'];
+$pass = md5(sha1($_REQUEST['pass']));
 
 //  check data 
 

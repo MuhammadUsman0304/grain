@@ -70,7 +70,7 @@
         </div>
         <div class="logo">
             <p class="pleft">Canadian grown crops </p>
-            <a href="index.html"><img src="image/logo.png" alt=""></a>
+            <a href="index.php"><img src="image/logo.png" alt=""></a>
             <p class="pright">By farmers who care</p>
         </div>
         <nav class="nav">
@@ -81,13 +81,13 @@
             </div>
             <ul class="navlinks">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>
                     <a href="careers.html">CAREERS</a>
                 </li>
                 <li class="subMenu">
-                    <a href="pro.html">PRODUCTS  </a>
+                    <a href="pro.php">PRODUCTS  </a>
                 </li>
                 <li>
                     <a href="about.html">About Us</a>
@@ -134,7 +134,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label>Enter Your Company Name</label>
+                                            <label>Enter Company Name</label>
                                             <input type="text" name="cname" class="form-control" required>
                                         </div>
                                     </div>

@@ -86,7 +86,7 @@
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" id="exampleInputMobile" name="phone" value="<?php echo $fetch['phone']; ?>">
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="form-group row">
                                     <label for="exampleInputMobile" class="col-sm-3 col-form-label"> WEB SITE</label>
                                     <div class="col-sm-9">

@@ -42,7 +42,7 @@ $Pcn = isset($_REQUEST['Pcn']) ? $_REQUEST['Pcn'] : 'no';
 // corn
 $Cog = isset($_REQUEST['Cog']) ? $_REQUEST['Cog'] : 'no';
 $Cnog = isset($_REQUEST['Cnog']) ? $_REQUEST['Cnog'] : 'no';
-$Ccn = isset($_REQUEST['Ccn']) ? $_REQUEST['Ccn'] : 'no';
+$Ccn = isset($_REQUEST['Ccn']) ? $_REQUEST['Ccn'] : 'no'; 
 
 $notes = $_REQUEST['notes'];
 

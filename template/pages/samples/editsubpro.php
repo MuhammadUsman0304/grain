@@ -67,7 +67,7 @@ error_reporting(E_ALL);
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" id="exampleInputEmail2" name="companyName" placeholder="<?php echo $fetch['companyName']; ?>">
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="form-group row">
                                     <div class="from-inline">
                                         <select class="custom-select my-1 mr-sm-2" required name="buyerORsuppliyer" id="inlineFormCustomSelectPref">

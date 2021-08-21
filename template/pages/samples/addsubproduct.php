@@ -33,17 +33,17 @@ error_reporting(E_ALL);
                     <div class="card col-lg-8 mx-auto">
 
                         <?php
-                        if (isset($_REQUEST['user'])) {
-                            $user = $_REQUEST['user'];
-                        } else {
-                            header("location:login.php");
-                        }
+                        // if (isset($_REQUEST['user'])) {
+                        //     $user = $_REQUEST['user'];
+                        // } else {
+                        //     header("location:login.php");
+                        // }
 
                         ?>
 
                         <div class="card-body px-5 py-5">
                             <h3 class="card-title text-left mb-3">Add Sub Product</h3>
-                            <form class="forms-sample" method="POST" action="addsubproduct_core.php?user=<?php echo $user; ?>">
+                            <form class="forms-sample" method="POST" action="addsubproduct_core.php">
                                 <div class="form-group row">
                                     <label for="exampleInputUsername2" class="col-sm-3 col-form-label">CONACT NAME</label>
                                     <div class="col-sm-9">

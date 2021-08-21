@@ -11,28 +11,21 @@ if (isset($_SESSION['username'])) {
  if (isset($_POST['login'])) {
  	$surename = $_POST['surename'];
  	$password = $_POST['password'];
- 	$query = "SELECT * FROM `buyers` WHERE `surename` = ? AND binary `password` = ?";
- 	$stmt = mysqli_prepare($con,$query) or die($con);
- 	if (is_object($stmt)) {
- 		$stmt->bind_param('ss',$surename, $password);
- 		$stmt->execute();
- 		$result = $stmt->get_result();
- 		$row = $result->num_rows;
- 		if ($row > 0) {
- 			$data = $result->fetch_assoc();
- 			$_SESSION['buyer_id'] = $data['buyer_id'];
- 			$_SESSION['username'] = $data['surename'];
- 			$_SESSION['email'] = $data['email'];
- 			header('location: index.php');
- 			exit();
- 		}else{
- 			$error_message = "<div class='alert alert-danger'>username or password is wrong</div>";
+ 	$query = "SELECT * FROM `buyers` WHERE `surename` = '$surename' AND binary `password` = '$password'";
+ 	$result = mysqli_query($con, $query) or die(mysqli_error($con));
+    $row = mysqli_num_rows($result)>0;
+ 	if ($data = mysqli_fetch_assoc($result)) {
+            $_SESSION['buyer_id'] = $data['buyer_id'];
+            $_SESSION['username'] = $data['surename'];
+            $_SESSION['email'] = $data['email'];
+            header('location: index.php');
+    }else{
+        $error_message = "<div class='alert alert-danger'>username or password is wrong</div>";
+    }
+ 			
+ 			
  		}
- 		$stmt->free_result();
- 		$stmt->close();
- 		$con->close();
- 	}
- }
+ 	
  
 ?>
 <!DOCTYPE html>
@@ -69,7 +62,7 @@ if (isset($_SESSION['username'])) {
         </div>
         <div class="logo">
             <p class="pleft">Canadian grown crops </p>
-            <a href="index.html"><img src="image/logo.png" alt=""></a>
+            <a href="index.php"><img src="image/logo.png" alt=""></a>
             <p class="pright">By farmers who care</p>
         </div>
         <nav class="nav">
@@ -80,13 +73,13 @@ if (isset($_SESSION['username'])) {
             </div>
             <ul class="navlinks">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>
                     <a href="careers.html">CAREERS</a>
                 </li>
                 <li class="subMenu">
-                    <a href="pro.html">PRODUCTS  </a>
+                    <a href="pro.php">PRODUCTS  </a>
                 </li>
                 <li>
                     <a href="about.html">About Us</a>

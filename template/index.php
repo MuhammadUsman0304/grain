@@ -1,6 +1,4 @@
 <?php
-
-
 session_start();
 
 ?>
@@ -163,8 +161,8 @@ session_start();
                                           ';
                 }
                 ?>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item" href="pages/samples/addproduct.php?user=<?php echo $id; ?>">
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item" href="pages/samples/addproduct.php?user=<?php //echo $id; ?>">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-dark rounded-circle">
                       <i class="mdi mdi-plus text-primary"></i>
@@ -173,9 +171,9 @@ session_start();
                   <div class="preview-item-content">
                     <p class="preview-subject mb-1">Add Company</p>
                   </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item preview-item" href="pages/samples/addsubproduct.php?user=<?php echo $id; ?>">
+                </a> -->
+                <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item" href="pages/samples/addsubproduct.php?user=<?php //echo $id; ?>">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-dark rounded-circle">
                       <i class="mdi mdi-cube text-primary"></i>
@@ -183,6 +181,17 @@ session_start();
                   </div>
                   <div class="preview-item-content">
                     <p class="preview-subject mb-1">Add Sub Product</p>
+                  </div>
+                </a> -->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item" href="pages/samples/adddata.php?user=<?php echo $id; ?>">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-cube text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Add Data</p>
                   </div>
                 </a>
                 <div class="dropdown-divider"></div>
@@ -208,7 +217,60 @@ session_start();
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+          <!-- adding my own data -->
+
+
+          <div class="row">
+            <div class="col-3">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <div class="body-content">
+                    <h2><i class="mdi mdi-cube"></i> 
+                      <a href="pages/samples/manage_site_front_product.php" class="text-white"> Manage Products</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <div class="body-content">
+                    <h2><i class="mdi mdi-odnoklassniki"></i> 
+                      <a href="pages/samples/manage_category.php" class="text-white"> Manage Categories</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <div class="body-content">
+                    <h2><i class="mdi mdi-account-multiple-plus"></i> 
+                      <a href="pages/samples/manage_buyers.php" class="text-white"> Manage Buyers</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card shadow rounded">
+                <div class="card-body">
+                  <div class="body-content">
+                    <h2><i class="mdi mdi-language-c"></i> 
+                      <a href="pages/samples/manage_quries.php" class="text-white"> Manage Info Quries</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+
+
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <footer class="footer">

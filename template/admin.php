@@ -160,8 +160,8 @@ session_start();
                                           ';
                                 }
                                 ?>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item preview-item" href="pages/samples/addproduct.php?user=<?php echo $id; ?>">
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item" href="pages/samples/addproduct.php?user=<?php //echo $id; ?>">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-dark rounded-circle">
                                             <i class="mdi mdi-plus text-primary"></i>
@@ -170,9 +170,9 @@ session_start();
                                     <div class="preview-item-content">
                                         <p class="preview-subject mb-1">Add Company</p>
                                     </div>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item preview-item" href="pages/samples/addsubproduct.php?user=<?php echo $id; ?>">
+                                </a> -->
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item" href="pages/samples/addsubproduct.php?user=<?php //echo $id; ?>">
                                     <div class="preview-thumbnail">
                                         <div class="preview-icon bg-dark rounded-circle">
                                             <i class="mdi mdi-cube text-primary"></i>
@@ -181,7 +181,18 @@ session_start();
                                     <div class="preview-item-content">
                                         <p class="preview-subject mb-1">Add Sub Product</p>
                                     </div>
-                                </a>
+                                </a> -->
+                                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item" href="pages/samples/adddata.php?user=<?php echo $id; ?>">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-cube text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject mb-1">Add Data</p>
+                  </div>
+                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item" href="pages/samples/logout.php">
                                     <div class="preview-thumbnail">

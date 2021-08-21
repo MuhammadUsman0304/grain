@@ -30,11 +30,11 @@
             <?php
             session_start();
 
-            if (isset($_REQUEST['user'])) {
-              $user = $_REQUEST['user'];
-            } else {
-              header("location:login.php");
-            }
+            // if (isset($_REQUEST['user'])) {
+            //   $user = $_REQUEST['user'];
+            // } else {
+            //   header("location:login.php");
+            // }
 
 
 
@@ -42,7 +42,7 @@
 
             <div class="card-body px-5 py-5">
               <h3 class="card-title text-left mb-3">Add Company</h3>
-              <form class="forms-sample" method="POST" action="addcompany_core.php?user=<?php echo $user; ?>">
+              <form class="forms-sample" method="POST" action="addcompany_core.php">
                 <div class="form-group row">
                   <div class="from-inline">
                     <select class="custom-select my-1 mr-sm-2" required name="buyerORsuppliyer" id="inlineFormCustomSelectPref">

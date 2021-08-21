@@ -25,10 +25,10 @@
             <div class="brandname">
               <div class="login">
                 <?php if (isset($_SESSION['username'])) {
-                    echo '<h3><a href="user-dash/dashboard.php"><i class="fa fa-home"></i> Dashboard</a></h3>';
+                    echo '<h4><a href="user-dash/dashboard.php"><i class="fa fa-home"></i> Dashboard</a></h4>';
                 }else{
-                    echo '<h3><a href="register.php"><i class="fa fa-user-plus"></i> Register</a> |
-                   <a href="login.php"><i class="fa fa-sign-in"></i> Login</a></h3>';
+                    echo '<h4><a href="register.php"><i class="fa fa-user-plus"></i> Register</a> |
+                   <a href="login.php"><i class="fa fa-sign-in"></i> Login</a></h4>';
                 } ?>
                   
               </div>
@@ -55,13 +55,13 @@
             </div>
             <ul class="navlinks">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li>
                     <a href="careers.html">CAREERS</a>
                 </li>
                 <li class="subMenu">
-                    <a href="pro.html">PRODUCTS  </a>
+                    <a href="pro.php">PRODUCTS  </a>
                 </li>
                 <li>
                     <a href="about.html">About Us</a>
@@ -72,6 +72,7 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                
             </ul>
         </nav>
     </section>
@@ -130,7 +131,7 @@
                     <figure>
                         <img class="figureimg" src="image/beans.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Beans </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Beans </a></h5>
                         </figcaption>
                     </figure>
                 </div>
@@ -138,7 +139,7 @@
                     <figure>
                         <img class="figureimg" src="image/grains.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Grains </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Grains </a></h5>
                         </figcaption>
                     </figure>
                 </div>
@@ -146,7 +147,7 @@
                     <figure>
                         <img class="figureimg" src="image/lentils.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Lentils </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Lentils </a></h5>
                         </figcaption>
                     </figure>
                 </div>
@@ -154,7 +155,7 @@
                     <figure>
                         <img class="figureimg" src="image/peas.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Peas </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Peas </a></h5>
                         </figcaption>
                     </figure>
                 </div>
@@ -162,7 +163,7 @@
                     <figure>
                         <img class="figureimg" src="image/oilseed.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Oil Seed </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Oil Seed </a></h5>
                         </figcaption>
                     </figure>
                 </div>
@@ -170,7 +171,7 @@
                     <figure>
                         <img class="figureimg" src="image/corn.jpg" alt="">
                         <figcaption>
-                            <h5 class="gallary-title"><a href="pro.html">Corn </a></h5>
+                            <h5 class="gallary-title"><a href="pro.php">Corn </a></h5>
                         </figcaption>
                     </figure>
                 </div>
